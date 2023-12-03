@@ -31,6 +31,7 @@ for line in lines:
   for character in line.strip():
     if character.isnumeric():
       numbers.append(int(character))
+      word_buffer = ''
     else:
       word_buffer += character
       number = searchNumber(word_buffer)
