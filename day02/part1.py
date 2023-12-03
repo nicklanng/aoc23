@@ -5,8 +5,8 @@ max_values = (12, 13, 14)
 
 def get_game_counts(game):
   counts = [0, 0, 0]
-  results = x = game.strip().split(": ")[1]
-  hands = x = results.split("; ")
+  results = game.strip().split(": ")[1]
+  hands = results.split("; ")
   for hand in hands:
     colors = hand.split(", ")
     for color in colors:
